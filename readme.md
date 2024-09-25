@@ -1,0 +1,1 @@
+Solving Inqubyte question
