@@ -3,9 +3,12 @@ const reverseString = (name) => {
   const arr = name.split(/[ ,]+/);
   let reversed = "";
   for (let j = 0; j < arr.length; j++) {
-    for (let i = 0; i < arr[j].length; i++) {
+    let wordReverse = "";
+    for (let i = arr[j].length - 1; i >= 0; i--) {
+      wordReverse = wordReverse + arr[j][i];
       console.log(arr[j][i]);
     }
+    reversed = reversed + wordReverse + " ";
   }
   return reversed;
 };
